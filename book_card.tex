@@ -1,0 +1,154 @@
+
+\documentclass[12pt]{jsarticle}
+
+\usepackage[dvipdfmx]{graphicx}
+
+\pagestyle{empty}
+
+\setlength{\textwidth}{182truemm}
+\setlength{\hoffset}{0in}
+\setlength{\voffset}{0in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{14truemm}
+\setlength{\textheight}{275truemm}
+\setlength{\topmargin}{16truemm}
+\advance\oddsidemargin -1in
+\advance\topmargin -1in
+\setlength{\footskip}{0in}
+
+\begin{document}
+\setlength{\unitlength}{1truemm}
+
+\newcommand{\bookdata}[4]{
+\begin{picture}(182,274)(0,0)
+\multiput(0,0)(0,137){2}{%
+\multiput(0,0)(91,0){2}{%
+
+%% ここから中身 %%%%%%%%%%%%
+    \begin{picture}(91,137)(0,0)
+      \put(20,132){\textsf{\scriptsize 2017 版 貸出カード}}
+      \put(20,125){\textsf{\scriptsize #1}}
+      \put(20,120){\usefont{T1}{phv}{b}{n} #2} % title
+      \put(30,116){\textsf{\scriptsize #3}}
+      \put(50,116){\usefont{T1}{phv}{b}{n}{\scriptsize (#4)}}
+
+      \put(10,130){\circle{6}}
+      
+      \put(25,102){\textsf{\scriptsize 氏名 }}
+      \put(42,102){\textsf{\scriptsize 貸出月日}}
+      \put(60,102){\textsf{\scriptsize 返却月日}}
+
+      \linethickness{0.2mm}
+      \multiput(20,100)(0,-10){10}{\line(1,0){51}}
+      \multiput(20,95)(0,-10){10}{\textsf{\scriptsize ( }}
+      \multiput(35,95)(0,-10){10}{\textsf{\scriptsize ) }}
+      \multiput(45,95)(0,-10){10}{\textsf{\scriptsize / }}
+      \multiput(55,95)(0,-10){10}{\textsf{\scriptsize - }}
+      \multiput(65,95)(0,-10){10}{\textsf{\scriptsize / }}
+
+      \multiput(0,0)(91,0){2}{\line(0,1){137}}
+      \multiput(0,0)(0,137){2}{\line(1,0){91}}
+
+    \end{picture}
+}}
+\end{picture}
+}
+
+\newcommand{\bookdatatypeII}[4]{
+\begin{picture}(182,274)(0,0)
+\multiput(0,0)(0,137){2}{%
+\multiput(0,0)(91,0){2}{%
+
+%% ここから中身 %%%%%%%%%%%%
+    \begin{picture}(91,137)(0,0)
+      \put(20,132){\textsf{\scriptsize 2017 版 貸出カード}}
+      \put(20,125){\textsf{\scriptsize #1}}
+      \put(20,120){\usefont{T1}{phv}{b}{n} #2} % title
+      \put(30,116){\textsf{\scriptsize #3}}
+      \put(50,110){\usefont{T1}{phv}{b}{n}{\scriptsize (#4)}}
+
+      \put(10,130){\circle{6}}
+      
+      \put(25,102){\textsf{\scriptsize 氏名 }}
+      \put(42,102){\textsf{\scriptsize 貸出月日}}
+      \put(60,102){\textsf{\scriptsize 返却月日}}
+
+      \linethickness{0.2mm}
+      \multiput(20,100)(0,-10){10}{\line(1,0){51}}
+      \multiput(20,95)(0,-10){10}{\textsf{\scriptsize ( }}
+      \multiput(35,95)(0,-10){10}{\textsf{\scriptsize ) }}
+      \multiput(45,95)(0,-10){10}{\textsf{\scriptsize / }}
+      \multiput(55,95)(0,-10){10}{\textsf{\scriptsize - }}
+      \multiput(65,95)(0,-10){10}{\textsf{\scriptsize / }}
+
+      \multiput(0,0)(91,0){2}{\line(0,1){137}}
+      \multiput(0,0)(0,137){2}{\line(1,0){91}}
+
+    \end{picture}
+}}
+\end{picture}
+}
+
+\bookdata{物理01}{物理入門コース01 {\large 力学}}{戸田盛和}{岩波書店}
+\bookdata{物理02}{物理入門コース02 {\large 解析力学}}{小出昭一郎}{岩波書店}
+\bookdata{物理03}{物理入門コース03 {\large 電磁気学 I}}{長岡洋介}{岩波書店}
+\bookdata{物理04}{物理入門コース04 {\large 電磁気学 II}}{長岡洋介}{岩波書店}
+\bookdata{物理05}{物理入門コース05 {\large 量子力学 I}}{中嶋貞雄}{岩波書店}
+\bookdata{物理06}{物理入門コース06 {\large 量子力学 II}}{中嶋貞雄}{岩波書店}
+\bookdata{物理07}{物理入門コース07 {\large 熱・統計力学}}{戸田盛和}{岩波書店}
+\bookdata{物理08}{物理入門コース08 {\large 弾性体と流体}}{恒藤敏彦}{岩波書店}
+\bookdata{物理09}{物理入門コース09 {\large 相対性理論}}{中野薫夫}{岩波書店}
+\bookdata{物理10}{物理入門コース10 物理のための数学}{和達三樹}{岩波書店}
+\bookdata{物理11}{{\small 岩波基礎物理シリーズ01} 力学・解析力学}{阿部龍蔵}{岩波書店}
+\bookdata{物理12}{{\small 岩波基礎物理シリーズ02} 連続体の力学}{巽友正}{岩波書店}
+\bookdata{物理13}{{\small 岩波基礎物理シリーズ03} 電磁気学}{川村清}{岩波書店}
+\bookdata{物理14}{{\small 岩波基礎物理シリーズ04} 物質の電磁気学}{中山正敏}{岩波書店}
+\bookdata{物理15}{{\small 岩波基礎物理シリーズ05} 量子力学}{原康夫}{岩波書店}
+\bookdata{物理16}{{\small 岩波基礎物理シリーズ06 物質の量子力学}}{岡崎誠}{岩波書店}
+\bookdata{物理17}{{\small 岩波基礎物理シリーズ07} 統計力学}{長岡洋介}{岩波書店}
+\bookdata{物理18}{{\tiny 岩波基礎物理シリーズ08} {\small 非平衡系の統計力学}}{北原和夫}{岩波書店}
+\bookdata{物理19}{{\small 岩波基礎物理シリーズ09} 相対性理論}{佐藤勝彦}{岩波書店}
+\bookdata{物理20}{{\small 岩波基礎物理シリーズ10} 物理の数学}{薩摩順吉}{岩波書店}
+\bookdata{物理21}{物理入門コース演習01 {\large 力学}}{戸田盛和}{岩波書店}
+\bookdata{物理22}{物理入門コース演習02 {\large 電磁気学}}{長岡洋介}{岩波書店}
+\bookdata{物理23}{物理入門コース演習03 {\large 量子力学}}{中嶋、  吉岡}{岩波書店}
+\bookdata{物理24}{物理入門コース演習04 {\large 熱・統計力学}}{戸田盛和}{岩波書店}
+\bookdata{物理25}{物理入門コース演習05 {\large 物理数学}}{和達三樹}{岩波書店}
+\bookdata{物理26}{朝倉物理学大系1  {\large 解析力学 I}}{山本、中村}{朝倉書店}
+\bookdata{物理27}{朝倉物理学大系1  {\large 解析力学 II}}{山本、中村}{朝倉書店}
+\bookdatatypeII{物理28}{界面の物理と化学}{ブット、グラフ、カペル}{丸善}
+\bookdata{物理29}{相転移と臨界現象の数理}{田崎、原}{共立出版}
+\bookdata{数学01}{{\tiny 物理数学シリーズ01} 物理と行列}{今井勤}{岩波書店}
+\bookdata{数学02}{{\tiny 物理数学シリーズ02} 物理と関数論}{今井勤}{岩波書店}
+\bookdata{数学03}{{\tiny 物理数学シリーズ03} 物理とフーリエ変換}{今井勤}{岩波書店}
+\bookdata{数学04}{{\tiny 物理数学シリーズ04} 物理とグリーン関数}{今井勤}{岩波書店}
+\bookdata{数学05}{{\tiny 理工系数学のキーポイント01} 微分積分}{川村清}{岩波書店}
+\bookdata{数学06}{{\tiny 理工系数学のキーポイント02} 線形代数}{薩摩、四ツ谷}{岩波書店}
+\bookdata{数学07}{{\tiny 理工系数学のキーポイント03} ベクトル解析}{薩摩、四ツ谷}{岩波書店}
+\bookdata{数学08}{{\tiny 理工系数学のキーポイント04} 複素関数}{表実}{岩波書店}
+\bookdata{数学09}{{\tiny 理工系数学のキーポイント05} 微分方程式}{佐野理}{岩波書店}
+\bookdata{数学10}{{\tiny 理工系数学のキーポイント06} 確率、統計}{佐野理}{岩波書店}
+\bookdata{数学11}{{\tiny 理工系数学のキーポイント07} 多変数の微分積分}{佐野理}{岩波書店}
+\bookdata{数学12}{{\tiny 理工系数学のキーポイント08} 行列と変換群}{小形正男}{岩波書店}
+\bookdata{数学13}{{\tiny 理工系数学のキーポイント09} フーリエ解析}{船越満明}{岩波書店}
+\bookdata{数学14}{{\tiny 理工系数学のキーポイント10} 偏微分方程式}{河村哲也}{岩波書店}
+\bookdata{数学15}{{\tiny 理工系の数学入門コース01} 微分積分}{和達三樹}{岩波書店}
+\bookdata{数学16}{{\tiny 理工系の数学入門コース02} 行列と1次換群}{戸田、浅野}{岩波書店}
+\bookdata{数学17}{{\tiny 理工系の数学入門コース03} ベクトル解析}{戸田盛和}{岩波書店}
+\bookdata{数学18}{{\tiny 理工系の数学入門コース04} 常微分方程式}{矢嶋信男}{岩波書店}
+\bookdata{数学19}{{\tiny 理工系の数学入門コース05} 複素関数}{表実}{岩波書店}
+\bookdata{数学20}{{\tiny 理工系の数学入門コース06 フーリエ解析}}{大石進一}{岩波書店}
+\bookdata{数学21}{{\tiny 理工系の数学入門コース07} 確率、統計}{薩摩順吉}{岩波書店}
+\bookdata{数学22}{{\tiny 理工系の数学入門コース08} 数値計算}{川上一郎}{岩波書店}
+\bookdata{数学23}{{\tiny 理工系の数学入門コース演習01} 微分積分}{和達、十河}{岩波書店}
+\bookdata{数学24}{{\tiny 理工系の数学入門コース演習02} 線形代数}{浅野、大関}{岩波書店}
+\bookdata{数学25}{{\tiny 理工系の数学入門コース演習03} ベクトル解析}{戸田、渡辺}{岩波書店}
+\bookdata{数学26}{{\tiny 理工系の数学入門コース演習04} 微分方程式}{和達、矢嶋}{岩波書店}
+\bookdata{数学27}{{\tiny 理工系の数学入門コース演習05} 複素関数}{表、迫田}{岩波書店}
+\bookdata{数学28}{フーリエ解析}{江沢洋}{朝倉書店}
+\bookdata{数学29}{スペクトル解析}{日野幹夫}{朝倉書店}
+\bookdata{数学30}{応用数学}{金谷健一}{共立出版}
+\bookdata{数学31}{最適化数学}{金谷健一}{共立出版}
+
+\end{document}
